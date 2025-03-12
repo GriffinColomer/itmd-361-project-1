@@ -82,7 +82,7 @@ h1, h2, h3 {
   border-left: 4px solid #ff9800;
 }
 
-#image-container img {
+#image-container1 img, #image-container2 img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

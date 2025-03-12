@@ -28,14 +28,14 @@
       <p>To extract the text and put it into a dataset: I took every image ran it under preprocessing, fed it to pytesseract to extract text, parsed out the tags, and created a json file with the title of the dyalist and the tags (if multiple days had the same name the tags had an incrementing number to represent multiple). </p>
       <h3>Initial Image</h3>
         <p>Here are a few examples of what the screenshot I took look like. You can see some of the tags are underlined and highlited green while some are not. I'm not sure what determines this but it is noticible.</p>
-        <div id="image-container">
+        <div id="image-container1">
           <img src="resources/initial_daylist_1.jpg" alt="colored Syntesizer Beach house tuesday morning nudisco and majestic syntesizer, beach house, majestic, infatuiated and remix">
           <img src="resources/initial_daylist_2.jpg" alt="colored daylist Mellow Mountain late night you listened to indie folk here is some mountain, mellow, granola vibes, indie chill, crunchy, hiking">
           <img src="resources/initial_daylist_3.jpg" alt="colored daylist indie chill alternative evening you listened to hipster and feel good in the evening. Here's some: alternative, indie chill, windows down, warm, chill rock and hipster">
         </div>
       <h3>Image PreProcessing</h3>
         <p>To makesure pytesseract is able to read the images, I ran them against a threshold, scaled them and inverted them to be black text white background.</p>
-        <div id="image-container">
+        <div id="image-container2">
           <img src="resources/processed_daylist_1.jpg" alt="black and white Syntesizer Beach house tuesday morning nudisco and majestic syntesizer, beach house, majestic, infatuiated and remix">
           <img src="resources/processed_daylist_2.jpg" alt="black and white daylist Mellow Mountain late night you listened to indie folk here is some mountain, mellow, granola vibes, indie chill, crunchy, hiking">
           <img src="resources/processed_daylist_3.jpg" alt="black and white daylist indie chill alternative evening you listened to hipster and feel good in the evening. Here's some: alternative, indie chill, windows down, warm, chill rock and hipster">
