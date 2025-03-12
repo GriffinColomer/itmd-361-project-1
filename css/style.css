@@ -113,3 +113,50 @@ pre {
 }
 
 /* lemon */
+#about-recipe h2, #recipe h2, #my-experience h2 {
+  color: #0277bd;
+}
+
+#header {
+  text-align: center;
+  padding: 1.5rem 0;
+  background: linear-gradient(90deg, #29b6f6 0%, #0277bd 100%);
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: white;
+}
+
+#about-recipe, #recipe, #my-experience {
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border-left: 4px solid #0288d1;
+}
+
+#ingredients {
+  background-color: #f8f9fa;
+  padding: 1.2rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+#Instructions {
+  background-color: #f8f9fa;
+  padding: 1.2rem;
+  border-radius: 6px;
+}
+
+#my-experience img {
+  border: 3px solid #29b6f6;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  max-width: 100%;
+  display: block;
+  margin: 1.5rem auto;
+}
