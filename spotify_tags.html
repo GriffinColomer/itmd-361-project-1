@@ -16,33 +16,32 @@
     </ul>
   </nav>
   <main id="content-wrapper">
-    <div id="about-project">
+    <section id="about-project">
       <h2>What Spotify Tags are Most Common for Me</h2>
       <p>My favorite music streaming service is Spotify. It has so many benefits that I could go over, but something I really enjoy is the Daylist. Spotify creates a custom play list that gets refreshed 4 times per day. Personally enjoying some variance in the music I listen to I often would listen to these playlists.</p>
       <p>After a while I haad realised it shows what tags are actually used to generate the playlist. I thought about it and decided. I should catalogue all of the tags I get. This led me down year long project where everytime I listened to the daylist I took a picture of the daylist.</p>
       <p>Recently I noticed that I had a little over 500 pictures of the daylist, and I should put the tags into a dataset so I could analyze what I listend to. This was quite the task, I didn't want to manually read and count the tags of each picture so I decided to create a script to do it for me.</p>
-    </div>
-
-    <div id="project-method">
+    </section>
+    <section id="project-method">
       <h2>Project Method</h2>
       <p>To extract the text and put it into a dataset: I took every image ran it under preprocessing, fed it to pytesseract to extract text, parsed out the tags, and created a json file with the title of the dyalist and the tags (if multiple days had the same name the tags had an incrementing number to represent multiple). </p>
       <h3>Initial Image</h3>
-        <p>Here are a few examples of what the screenshot I took look like. You can see some of the tags are underlined and highlited green while some are not. I'm not sure what determines this but it is noticible.</p>
-        <div id="image-container1">
-          <img src="resources/initial_daylist_1.jpg" alt="colored Syntesizer Beach house tuesday morning nudisco and majestic syntesizer, beach house, majestic, infatuiated and remix">
-          <img src="resources/initial_daylist_2.jpg" alt="colored daylist Mellow Mountain late night you listened to indie folk here is some mountain, mellow, granola vibes, indie chill, crunchy, hiking">
-          <img src="resources/initial_daylist_3.jpg" alt="colored daylist indie chill alternative evening you listened to hipster and feel good in the evening. Here's some: alternative, indie chill, windows down, warm, chill rock and hipster">
-        </div>
+      <p>Here are a few examples of what the screenshot I took look like. You can see some of the tags are underlined and highlited green while some are not. I'm not sure what determines this but it is noticible.</p>
+      <div id="image-container1">
+        <img src="resources/initial_daylist_1.jpg" alt="colored Syntesizer Beach house tuesday morning nudisco and majestic syntesizer, beach house, majestic, infatuiated and remix">
+        <img src="resources/initial_daylist_2.jpg" alt="colored daylist Mellow Mountain late night you listened to indie folk here is some mountain, mellow, granola vibes, indie chill, crunchy, hiking">
+        <img src="resources/initial_daylist_3.jpg" alt="colored daylist indie chill alternative evening you listened to hipster and feel good in the evening. Here's some: alternative, indie chill, windows down, warm, chill rock and hipster">
+      </section>
       <h3>Image PreProcessing</h3>
-        <p>To makesure pytesseract is able to read the images, I ran them against a threshold, scaled them and inverted them to be black text white background.</p>
-        <div id="image-container2">
-          <img src="resources/processed_daylist_1.jpg" alt="black and white Syntesizer Beach house tuesday morning nudisco and majestic syntesizer, beach house, majestic, infatuiated and remix">
-          <img src="resources/processed_daylist_2.jpg" alt="black and white daylist Mellow Mountain late night you listened to indie folk here is some mountain, mellow, granola vibes, indie chill, crunchy, hiking">
-          <img src="resources/processed_daylist_3.jpg" alt="black and white daylist indie chill alternative evening you listened to hipster and feel good in the evening. Here's some: alternative, indie chill, windows down, warm, chill rock and hipster">
-        </div>
+      <p>To makesure pytesseract is able to read the images, I ran them against a threshold, scaled them and inverted them to be black text white background.</p>
+      <section id="image-container2">
+        <img src="resources/processed_daylist_1.jpg" alt="black and white Syntesizer Beach house tuesday morning nudisco and majestic syntesizer, beach house, majestic, infatuiated and remix">
+        <img src="resources/processed_daylist_2.jpg" alt="black and white daylist Mellow Mountain late night you listened to indie folk here is some mountain, mellow, granola vibes, indie chill, crunchy, hiking">
+        <img src="resources/processed_daylist_3.jpg" alt="black and white daylist indie chill alternative evening you listened to hipster and feel good in the evening. Here's some: alternative, indie chill, windows down, warm, chill rock and hipster">
+      </section>
       <h3>Parsing</h3>
-        <p>when the image was ran through pytesseract it output all the text on the page which was more than i needed. Just wanting the tags at the bottom I created an algorithm to run the text through to extract tht tages and title into a json to eventually end up with this.</p>
-        <pre><code>
+      <p>when the image was ran through pytesseract it output all the text on the page which was more than i needed. Just wanting the tags at the bottom I created an algorithm to run the text through to extract tht tages and title into a json to eventually end up with this.</p>
+      <pre><code>
             "synthesizer beach house tuesday morning": [
                 [
                 "synthesizer",
@@ -50,7 +49,7 @@
                 "majestic",
                 "nu disco",
                 "infatuated","remix"]]</code></pre>
-        <pre><code>
+      <pre><code>
             "mellow mountain late night": [
                 [
                 "mountain",
@@ -59,7 +58,7 @@
                 "indie chill",
                 "crunchy",
                 "hiking"]]</code></pre>
-        <pre><code>
+      <pre><code>
             "indie chill alternative evening": [
                 [
                 "alternative",
@@ -69,13 +68,13 @@
                 "chill rock",
                 "hipster"]]</code></pre>
     </div>
-    <div id="final-thoughts">
+    <section id="final-thoughts">
       <h2>Final Thoughts</h2>
       <p>After completing this project I had lots of fun loking at the different graphs and trends that I could see. It was fun to see what I listened to most commonly some of the weirder genres that popped up. My favorite data model I created from this was actually a word cloud that is below. Finally I don't recomend using the same method I did to get all this data. It took forever and I definitely forgot to take some pictures some days.</p>
-      <p>Also here is a song I found on spotify recently that I enjoy listening too, for the media requirements for this project. <audio controls><source src="resources/next_to_you.mp3" type="audio/mpeg"></audio></p>
+      <p>Also here is a song I found on spotify recently that I enjoy listening too, for the media requirements for this project. <audio controls>
+          <source src="resources/next_to_you.mp3" type="audio/mpeg"></audio></p>
       <img src="resources/wordcloud.png" alt="Word cloud with lots of spotify tags">
-    </div>
+    </section>
   </main>
 </body>
-
 </html>
