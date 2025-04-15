@@ -3,4 +3,10 @@ function initMap() {
         center: {lat: 41.836449, lng: -87.626691},
         zoom: 15,
     });
+
+    const marker = new google.maps.Marker({
+        map,
+        position: {lat: 41.838615380326466, lng: -87.63213314132148},
+        title: "Ferro's",
+    });
 }
