@@ -8,18 +8,22 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAu8-zlsgqqzf1FNeTV0neqlVJ8-Si60wA&libraries=maps,marker" defer></script>
+  <script src="script.js"></script>
 </head>
 
 <body>
-  <nav id="main-nav">
-    <ul id="nav">
+  
+    <nav id="main-nav">
+      <ul id="nav">
       <li><a href="index.html">Resume</a></li>
       <li><a href="spotify_tags.html">Spotify Tags</a></li>
       <li><a href="lemon_bar.html">Lemon Bar Recipe</a></li>
       <li><a href="google_maps.html">Cool Places</a></li>
-    </ul>
-  </nav>
-  
+      </ul>
+    </nav>
+  <section id="map-area">
+    <div id="map"></div>
+  </section>
   <gmp-map center="37.4220656,-122.0840897" zoom="10" map-id="DEMO_MAP_ID" style="height: 400px"></gmp-map>
 
 </body>
