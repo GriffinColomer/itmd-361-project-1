@@ -1,2 +1,2 @@
-# itmd-361-project-2
-Project 2 for itmd 361
+# itmd-361-project-3
+Project 3 for itmd 361
