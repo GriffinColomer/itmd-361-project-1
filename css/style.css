@@ -160,3 +160,44 @@ pre {
   display: block;
   margin: 1.5rem auto;
 }
+
+/* Mobile design resume page */
+@media only screen and (max-width: 400px) {
+  #nav, #nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav li {
+    width: 100%;
+    text-align: center;
+  }
+
+  #nav a {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+
+  #content-wrapper {
+    width: 95%;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  #experince-1, #experince-2, #project-1, #project-2, #project-3, #education-1, #education-2, #about-me {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}
