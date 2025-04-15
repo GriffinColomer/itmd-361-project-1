@@ -161,6 +161,15 @@ pre {
   margin: 1.5rem auto;
 }
 
+/* Map page */
+#map {
+  height: 500px;
+  width: 80%;
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
 /* Mobile design resume page */
 @media only screen and (max-width: 400px) {
   #nav, #nav ul {
